@@ -10,21 +10,24 @@ int main()
     while (t--)
     {
         int n;
-        cin >> n;
+        cin >> n;           // Taking input of size of an array.
 
         int array[n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)     // Taking Array input.
         {
             cin >> array[i];
         }
         
-        sort(array, array+n);
+        sort(array, array+n);       // Sort the array.
 
-        int k;
+        int k;                      // Taking input of kth element.
         cin>>k;
 
-        cout<<array[k-1]<<" ";
+        cout<<k<<" Minimum element: "<<array[k-1]<<endl;
+        cout<<k<<" Maximum element: "<<array[n-k]<<endl;
     }
 
     return 0;
 }
+
+// Time Complexity : 
